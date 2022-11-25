@@ -9,8 +9,11 @@ fetch(' https://finalpractice202103069.herokuapp.com/')
       
         
      var originalContent = ` 
-                                   
-                                <div class="thumb">
+                                 
+     <div class="owl-features owl-carousel" style="position: relative; z-index: 5;">
+          
+            <div class="item" >
+            <div class="thumb">
                                 <img src="assets/images/closed-01.jpg" alt="">
                                 <span class="winner"><em>Winner:</em> [TITEL]</span>
                                 <span class="price"><em>Award :</em> [DESCRIPTION]</span>
@@ -25,6 +28,11 @@ fetch(' https://finalpractice202103069.herokuapp.com/')
                                     </div>
                                 </div>
                                 </div>
+            </div>
+
+          </div>
+
+                             
                            `;
  
  json.services.forEach(e => {
