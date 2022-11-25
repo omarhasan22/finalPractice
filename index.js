@@ -9,22 +9,21 @@ fetch(' https://finalpractice202103069.herokuapp.com/')
       
         
      var originalContent = ` 
-                                    <div class="closed-item">
-                                    <div class="thumb">
-                                    <img src="" alt="">
-                                    <span class="winner"><em>Winner:</em> [TITEL]</span>
-                                    <span class="price"><em>Award :</em> [DESCRIPTION]</span>
+                                   
+                                <div class="thumb">
+                                <img src="assets/images/closed-01.jpg" alt="">
+                                <span class="winner"><em>Winner:</em> [TITEL]</span>
+                                <span class="price"><em>Award :</em> [DESCRIPTION]</span>
+                                </div>
+                                <div class="down-content">
+                                <div class="row">
+                                    <div class="col-7">
+                                    <h4>88 Participants <br><span>Number Of Artists</span></h4>
                                     </div>
-                                    <div class="down-content">
-                                    <div class="row">
-                                        <div class="col-7">
-                                        <h4>88 Participants <br><span>Number Of Artists</span></h4>
-                                        </div>
-                                        <div class="col-5">
-                                        <h4 class="pics">320 Pictures <br><span>Submited Pics</span></h4>
-                                        </div>
+                                    <div class="col-5">
+                                    <h4 class="pics">320 Pictures <br><span>Submited Pics</span></h4>
                                     </div>
-                                    </div>
+                                </div>
                                 </div>
                            `;
  
@@ -35,7 +34,7 @@ fetch(' https://finalpractice202103069.herokuapp.com/')
    currentContent = currentContent.replace(`[ICON]`,e["C"])
  
    var div = document.createElement('div')
-  // div.className = "col-lg-4 col-md-6 icon-box"
+   div.className = "closed-item"
    div.innerHTML = currentContent;
    mainContainer.appendChild(div);
  });
