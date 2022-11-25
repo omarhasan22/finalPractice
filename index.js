@@ -26,7 +26,7 @@ fetch(' https://finalpractice202103069.herokuapp.com/')
    var currentContent = originalContent;
    currentContent = currentContent.replace(`[TITLE]`,e["A"])
    currentContent = currentContent.replace(`[DESCRIPTION]`,e["B"])
-   currentContent = currentContent.replace(`[ICON]`,e["C"])
+   //currentContent = currentContent.replace(`[ICON]`,e["C"])
  
    var div = document.createElement('div')
    div.className = "col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0"
