@@ -11,7 +11,7 @@ fetch(' https://finalpractice202103069.herokuapp.com/')
      var originalContent = ` 
                                     <div class="closed-item">
                                     <div class="thumb">
-                                    <img src="assets/images/closed-01.jpg" alt="">
+                                    <img src="" alt="">
                                     <span class="winner"><em>Winner:</em> [TITEL]</span>
                                     <span class="price"><em>Award :</em> [DESCRIPTION]</span>
                                     </div>
